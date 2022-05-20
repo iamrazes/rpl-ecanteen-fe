@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>eCanteen | Transaksi</title>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</head>
+
+<body class="text-sm text-slate-600">
+    <!-- Navbar -->
+    <nav class="flex justify-center">
+        <div
+            class="container fixed bg-gradient-to-r from-[#72c2ff] to-[#7277ff] text-white rounded-b-xl pb-2 md:pt-2 px-6">
+            <div class="flex flex-col md:items-center md:flex-row">
+                <div class="invisible md:visible font-semibold text-xl">
+                    <a href="#">eCanteen</a>
+                </div>
+                <div class="flex justify-center -mt-3 grow mb-1 px-2 md:mt-1">
+                    <input type="text" placeholder=""
+                        class="px-2 rounded-lg text-sm text-slate-500 h-[32px] w-[230px] md:w-[400px] lg:w-[600px] object-cover mx-2">
+                    <button class="h-[32px] w-[32px] fa fa-search"></button>
+                </div>
+                <div class="md:w-[152px] md:h-[44px]">
+                    <div class="flex flex-row gap-2 justify-center items-center mb-1 mt-2">
+                        <button
+                            class="bg-transparent rounded font-semibold border-2 border-white text-white text-sm h-[32px] w-[72px]">Masuk</button>
+                        <button
+                            class="bg-white rounded font-semibold text-[#7277ff] text-sm h-[32px] w-[72px]">Daftar</button>
+                    </div>
+                    <!-- <div class="flex flex-row md:flex-col-reverse gap-2 justify-between items-center mb-1 mt-2">
+                        <div class="md:invisible">
+                            <p class="text-sm">Halo, kak <span class="font-semibold"><a href="">USERRRRRRR!</a></span></p>
+                        </div>
+                        <div>
+                            <button class="h-[32px] w-[32px] fa fa-bucket"></button>
+                            <button class="h-[32px] w-[32px] fa fa-user"></button>
+                            <button class="h-[32px] w-[32px] fa fa-right-from-bracket">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
+</html>

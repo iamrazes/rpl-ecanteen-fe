@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>eCanteen | Items</title>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="flex justify-center">
+        <div
+            class="container fixed bg-gradient-to-r from-[#72c2ff] to-[#7277ff] text-white rounded-b-xl pb-2 md:pt-2 px-6">
+            <div class="flex flex-col md:items-center md:flex-row">
+                <div class="invisible md:visible font-semibold text-xl">
+                    <a href="#">eCanteen</a>
+                </div>
+                <div class="flex justify-center -mt-3 grow mb-1 px-2 md:mt-1">
+                    <input type="text" placeholder=""
+                        class="px-2 rounded-lg text-sm text-slate-500 h-[32px] w-[230px] md:w-[400px] lg:w-[600px] object-cover mx-2">
+                    <button class="h-[32px] w-[32px] fa fa-search"></button>
+                </div>
+                <div class="md:w-[152px] md:h-[44px]">
+                    <div class="flex flex-row gap-2 justify-center items-center mb-1 mt-2">
+                        <button
+                            class="bg-transparent rounded font-semibold border-2 border-white text-white text-sm h-[32px] w-[72px]">Masuk</button>
+                        <button
+                            class="bg-white rounded font-semibold text-[#7277ff] text-sm h-[32px] w-[72px]">Daftar</button>
+                    </div>
+                    <!-- <div class="flex flex-row md:flex-col-reverse gap-2 justify-between items-center mb-1 mt-2">
+                            <div class="md:invisible">
+                                <p class="text-sm">Halo, kak <span class="font-semibold"><a href="">USERRRRRRR!</a></span></p>
+                            </div>
+                            <div>
+                                <button class="h-[32px] w-[32px] fa fa-bucket"></button>
+                                <button class="h-[32px] w-[32px] fa fa-user"></button>
+                                <button class="h-[32px] w-[32px] fa fa-right-from-bracket">
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Item Details -->
+    <div class="flex justify-center">
+        <div class="mx-auto my-auto mt-28 md:mt-20 lg:mt-24">
+            <div class="flex justify-between px-2 py-1">
+                <a href="#"><span class="fa fa-arrow-left"></span></a>
+                <a href="#"><span class="fa fa-home"></span></a>
+            </div>
+            <div class="rounded-lg shadow-lg px-4 py-4 bg-white">
+                <div
+                    class="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start py-4 gap-4">
+                    <div class="flex ">
+                        <img src="/public/img1.jpg" alt=""
+                            class="rounded-lg w-[300px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px] object-cover">
+                    </div>
+                    <div class="flex flex-col-reverse lg:flex-row">
+                        <div class="flex flex-col w-[280px] mt-4 md:mt-0 text-clip">
+                            <p>Deskripsi Barang :</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum.</p>
+                        </div>
+                        <div class="flex flex-col w-[280px] justify-start md:my-0 mb-2 ml-0 md:ml-4">
+                            <div class="flex flex-col gap-1 ">
+                                <p class="font-bold text-lg">Nama Barang</p>
+                                <p class="font-semibold text-blue-400">Rp. 1.000.000</p>
+                                <p>Stock : <span class="font-semibold">999</span></p>
+                            </div>
+                            <div class="flex flex-col items-center mb-2">
+                                <button
+                                    class="bg-gradient-to-r from-[#72c2ff] to-[#7277ff] text-white mt-4 px-4 py-2 rounded-md">BELI
+                                    SEKARANG</button>
+                                <a href="#" class="text-sm mt-2 text-gray-300">Kembali ke Beranda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-semibold text-[#72c2ff] mt-4">Rekomendasi</p>
+                    <div class="flex flex-wrap gap-2 lg:gap-4 mt-4 justify-center">
+                        <a href="#" class="w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+                            <img src="/public/img1.jpg" class="rounded-md" alt="">
+                        </a>
+                        <a href="#" class="w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+                            <img src="/public/img1.jpg" class="rounded-md" alt="">
+                        </a>
+                        <a href="#" class="w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+                            <img src="/public/img1.jpg" class="rounded-md" alt="">
+                        </a>
+                        <a href="#" class="w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+                            <img src="/public/img1.jpg" class="rounded-md" alt="">
+                        </a>
+                        <a href="#" class="w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+                            <img src="/public/img1.jpg" class="rounded-md" alt="">
+                        </a>
+                        <a href="#" class="w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+                            <img src="/public/img1.jpg" class="rounded-md" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
